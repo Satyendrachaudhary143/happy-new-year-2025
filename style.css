@@ -219,6 +219,11 @@ button:hover {
     font-weight: 900;
     text-transform: uppercase;
 }
+.jadu {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
 
 .wishSayari {
     margin: 15px auto;
