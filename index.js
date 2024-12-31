@@ -98,26 +98,33 @@ let n;
 let l;
 let a;
 var countDownDate = new Date("01 January, 2025 00:00:00").getTime()
-setInterval(() => {
+let ld = new Date();
+let y = ld.getFullYear();
+console.log(y);
 
-    let e = (new Date).getTime()
-    let o = countDownDate - e;
+if (y === 2024) {
+
+    setInterval(() => {
+
+        let e = (new Date).getTime()
+        let o = countDownDate - e;
 
 
-    t = Math.floor(o / 864e5)
+        t = Math.floor(o / 864e5)
 
-    n = Math.floor(o % 864e5 / 36e5)
+        n = Math.floor(o % 864e5 / 36e5)
 
-    a = Math.floor(o % 36e5 / 6e4)
+        a = Math.floor(o % 36e5 / 6e4)
 
-    l = Math.floor(o % 6e4 / 1e3);
-    day.innerHTML = `  <p class="wishday"> <span style="color: red;" class="days">${t} </span><span> दिन,</span><span style="color: red;"
-                                    class="hours"> ${n}
-                                </span></span>घंटे,</span><span style="color: red;" class="minutes">${a}</span></span> मिनट,</span> <br>
-                                <span style="color: red;" class="second">${l}</span><span>सेकंड</span>
-                                <spna style="color:red"> पहले </spna>
-                        
-                            </p>`
-}, 1000)
+        l = Math.floor(o % 6e4 / 1e3);
+        day.innerHTML = `  <p class="wishday"> <span style="color: red;" class="days">${t} </span><span> दिन,</span><span style="color: red;"
+                                        class="hours"> ${n}
+                                    </span></span>घंटे,</span><span style="color: red;" class="minutes">${a}</span></span> मिनट,</span> <br>
+                                    <span style="color: red;" class="second"> ${l} </span><span>सेकंड</span>
+                                    <spna style="color:red"> पहले </spna>
+    
+                                </p>`
+    }, 1000)
+}
 
 
